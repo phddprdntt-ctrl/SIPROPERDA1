@@ -983,7 +983,7 @@
 
       const attachSharedFooter = () => {
         pages.forEach((page) => {
-          if (page.querySelector('.site-footer')) return;
+          if (page.id === 'beranda' || page.querySelector('.site-footer')) return;
           page.insertAdjacentHTML('beforeend', footerMarkup(page.id));
         });
       };
